@@ -15,6 +15,7 @@ Five playable browser games built with PixiJS and TypeScript. I separated game l
 ## Selected work
 
 - **Market Pilot** · A Next.js trading analytics dashboard with Recharts for equity and daily profit and loss, candlestick charts, and a Python integration with Interactive Brokers. [Dashboard code](https://github.com/mikegauci/market-pilot/blob/main/dashboard/components/analytics-dashboard.tsx)
+- **MaltaGuns** · I built the platform end to end in Next.js and TypeScript, from the public marketplace to a custom CMS and admin CRM for managing listings, articles, events, and users. [Public site](https://www.maltaguns.com/) · [Frontend code](https://github.com/mikegauci/maltaguns-app/blob/main/app/page.tsx) · [Admin dashboard code](https://github.com/mikegauci/maltaguns-app/blob/main/app/admin/page.tsx)
 - **QTM Detailing** · A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings and leads, and a Google Drive integration for importing gallery photos. [Repository](https://github.com/mikegauci/qtm-detailing)
 - **Pantrila** · A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations. [Repository](https://github.com/mikegauci/pantrila) · [Try the guest demo](https://app.pantrila.com)
 
