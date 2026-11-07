@@ -4,9 +4,9 @@ I'm a full-stack developer. I build React and TypeScript interfaces, analytics d
 
 ## Featured project · iGaming Canvas Lab
 
-Five playable browser games built with PixiJS and TypeScript. I separated game logic from rendering so outcomes can be tested independently. The scratch card tracks coverage on the CPU while PixiJS renders the effect, avoiding GPU readback.
+Five playable browser games built with PixiJS and TypeScript. I separated game logic from rendering so outcomes can be tested independently. Mini Slot animates the reels toward a predetermined result, and Crash uses a mock server clock to determine whether a cash-out arrives in time.
 
-[Play the scratch card](https://igaming-canvas-lab.vercel.app/scratch/) · [Browse the code and tests](https://github.com/mikegauci/igaming-canvas-lab/tree/main/apps/scratch)
+[Play Mini Slot](https://igaming-canvas-lab.vercel.app/slot/) · [Play Crash](https://igaming-canvas-lab.vercel.app/crash/) · [Browse the code and tests](https://github.com/mikegauci/igaming-canvas-lab/tree/main/apps)
 
 <a href="https://igaming-canvas-lab.vercel.app/">
   <img src="assets/canvas-lab.jpg" width="640" alt="iGaming Canvas Lab cover art with a neon sunset and arcade lettering">
@@ -19,7 +19,8 @@ Five playable browser games built with PixiJS and TypeScript. I separated game l
 - **Pantrila** · A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations. [Repository](https://github.com/mikegauci/pantrila) · [Try the guest demo](https://app.pantrila.com)
 
 <a href="https://github.com/mikegauci/pantrila">
-  <img src="assets/pantrila-meal-plan.png" width="240" alt="Pantrila mobile meal plan showing daily meals and nutrition targets">
+  <img src="assets/pantrila-meal-plan.png" width="43%" alt="Pantrila mobile meal plan showing daily meals and nutrition targets">&nbsp;
+  <img src="assets/pantrila-grocery-list.png" width="43%" alt="Pantrila mobile grocery list showing ingredients and quantities for planned meals">
 </a>
 
 ## How I use coding agents
