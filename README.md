@@ -1,7 +1,7 @@
 <h1 align="center">Michael Gauci</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&duration=2600&pause=900&color=2EA043&center=true&vCenter=true&width=560&lines=Full-stack+developer;TypeScript+%2B+Python;LLM+integrations+that+ship+with+evals;WordPress%2C+Gatsby%2C+Astro%2C+Next.js+migrations" alt="Full-stack developer · TypeScript and Python · LLM integrations · Framework migrations">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&duration=2600&pause=900&color=2EA043&center=true&vCenter=true&width=560&lines=Full-stack+developer;TypeScript+%2B+Python;LLM+integrations+that+ship+with+evals;WordPress+%E2%86%92+Next.js+or+Astro;Gatsby+%E2%86%92+Astro+migrations" alt="Full-stack developer · TypeScript and Python · LLM integrations · Framework migrations">
 </p>
 
 <p align="center">
