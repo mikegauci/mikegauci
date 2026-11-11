@@ -47,8 +47,7 @@ A meal planner with Next.js and Expo clients, a shared TypeScript API client, an
 **[Public Site](https://pantrila.com/)** · **[Public App (Try it as Guest)](https://app.pantrila.com/)**
 
 <a href="https://app.pantrila.com/">
-  <img src="assets/pantrila-meal-plan.png" width="43%" alt="Pantrila mobile meal plan showing daily meals and nutrition targets">&nbsp;
-  <img src="assets/pantrila-grocery-list.png" width="43%" alt="Pantrila mobile grocery list showing ingredients and quantities for planned meals">
+  <img src="assets/pantrila-tour.gif" width="640" alt="Pantrila homepage, weekly meal plan and grocery list, with cards showing an allergen-checked recipe answer, a day landing on its energy target and a list of only what is missing">
 </a>
 
 ### 📈 Market Pilot
