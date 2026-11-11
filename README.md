@@ -1,4 +1,13 @@
-# Michael Gauci
+<h1 align="center">Michael Gauci</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&duration=2600&pause=900&color=2EA043&center=true&vCenter=true&width=560&lines=Full-stack+developer;TypeScript+%2B+Python;LLM+integrations+that+ship+with+evals;WordPress+and+Astro+%E2%86%92+Next.js+migrations" alt="Full-stack developer · TypeScript and Python · LLM integrations · Framework migrations">
+</p>
+
+<p align="center">
+  📍 Based in Malta<br>
+  <a href="mailto:mikegauci@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/michael-gauci-422180104">LinkedIn</a>
+</p>
 
 I'm a full-stack developer working across TypeScript and Python. On the front end I build React and Next.js interfaces, analytics dashboards and admin tools. On the back end I write the APIs, Supabase data models and Python services behind them, such as a FastAPI meal-planning backend and a trading engine connected to Interactive Brokers.
 
@@ -6,9 +15,19 @@ I integrate LLMs into products, not just chat boxes. That includes retrieval-aug
 
 I also migrate sites between frameworks. I've moved several WordPress sites and an Astro site to Next.js on Vercel and Supabase, with page-by-page parity checks, managed redirects, a custom SEO layer and CMS tools so editors can manage content themselves.
 
+## Tech stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,nodejs,python,fastapi,supabase,postgres,vercel,wordpress,astro,git&perline=13" alt="TypeScript, React, Next.js, Tailwind CSS, Node.js, Python, FastAPI, Supabase, PostgreSQL, Vercel, WordPress, Astro and Git">
+</p>
+
+<p align="center"><sub>Also: OpenAI API · pgvector · Expo · PixiJS · Recharts · shadcn/ui · Interactive Brokers API</sub></p>
+
 ## Projects
 
 ### 🎰 iGaming Canvas Lab
+
+`TypeScript` `PixiJS` `Vite` `Vitest` `pnpm workspaces`
 
 Five playable browser games built with PixiJS and TypeScript. I separated game logic from rendering so outcomes can be tested independently. Mini Slot animates the reels toward a predetermined result, and Crash uses a mock server clock to determine whether a cash-out arrives in time.
 
@@ -20,6 +39,8 @@ Five playable browser games built with PixiJS and TypeScript. I separated game l
 
 ### 🎯 MaltaGuns
 
+`Next.js` `React` `TypeScript` `Supabase` `Tailwind CSS` `Radix UI` `TanStack Table` `Tiptap` `Resend`
+
 I built the platform end to end in Next.js and TypeScript, from the public marketplace to a custom CMS and admin CRM for managing listings, articles, events, and users.
 
 **[Public Site](https://www.maltaguns.com/)** · **[Browse Codebase](https://github.com/mikegauci/maltaguns-app)**
@@ -29,6 +50,8 @@ I built the platform end to end in Next.js and TypeScript, from the public marke
 </a>
 
 ### 🚗 QTM Detailing
+
+`Next.js` `TypeScript` `Supabase` `Tailwind CSS` `shadcn/ui` `Google APIs` `OpenAI` `FullCalendar` `dnd kit`
 
 A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings and leads, and a Google Drive integration for importing gallery photos.
 
@@ -42,6 +65,8 @@ A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings an
 
 ### 🥗 Pantrila
 
+`Next.js` `Expo` `TypeScript` `Python` `FastAPI` `OpenAI` `pgvector` `Supabase`
+
 A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations.
 
 **[Public Site](https://pantrila.com/)** · **[Public App (Try it as Guest)](https://app.pantrila.com/)**
@@ -51,6 +76,8 @@ A meal planner with Next.js and Expo clients, a shared TypeScript API client, an
 </a>
 
 ### 📈 Market Pilot
+
+`Next.js` `TypeScript` `Recharts` `Python` `OpenAI` `Supabase` `Interactive Brokers API`
 
 A Next.js trading analytics dashboard with Recharts for equity and daily profit and loss, candlestick charts, and a Python trading engine connected to Interactive Brokers. An LLM scores each watched stock as buy, hold or sell, and hard entry filters and risk caps decide whether a strong BUY becomes a trade. The strategy page walks through that path step by step.
 
@@ -64,8 +91,14 @@ A Next.js trading analytics dashboard with Recharts for equity and daily profit 
 
 I work with **Claude Code**, **Codex** and **Cursor** every day, and I set each repository up so all three follow the same rules. `CLAUDE.md` and `AGENTS.md` hold the project instructions, and Cursor rules and skills cover the conventions that are easy to get wrong. In MaltaGuns, skills describe the design system and the firearms domain. In QTM Detailing, a rule keeps every quote button pointing at the same WhatsApp link.
 
+<details>
+<summary><b>Skills, MCP servers and how I test LLM features</b></summary>
+<br>
+
 I turn recurring work into skills, so it runs the same way every time. Market Pilot has skills for preflight checks, adding a strategy filter, diagnosing the trader and reviewing a trading session. The preflight skill picks which tests, lint checks and builds to run based on what changed. In Pantrila, the mobile agent guide calls for checking the installed Expo version against its documentation before writing code. [Preflight skill](https://github.com/mikegauci/market-pilot/blob/main/.agents/skills/preflight-checks/SKILL.md) · [Mobile agent guide](https://github.com/mikegauci/pantrila/blob/main/mobile/AGENTS.md)
 
 I connect agents to the services the apps run on through MCP servers. In Market Pilot, schema changes go through the Supabase MCP server and are saved as migration files in the same step, so the database and the repository stay in sync.
 
 On the product side, I treat LLM features like any other code that has to be tested. Model calls return structured output against a JSON schema instead of free text, Pantrila's retrieval runs on OpenAI embeddings stored in pgvector, and its eval suites score retrieval, chat and meal-plan quality and save reports, so a prompt or model change that makes results worse shows up before it ships.
+
+</details>
