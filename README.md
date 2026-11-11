@@ -1,7 +1,7 @@
 <h1 align="center">Michael Gauci</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&duration=2600&pause=900&color=2EA043&center=true&vCenter=true&width=560&lines=Full-stack+developer;TypeScript+%2B+Python;LLM+integrations+that+ship+with+evals;WordPress+and+Astro+%E2%86%92+Next.js+migrations" alt="Full-stack developer · TypeScript and Python · LLM integrations · Framework migrations">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&duration=2600&pause=900&color=2EA043&center=true&vCenter=true&width=560&lines=Full-stack+developer;TypeScript+%2B+Python;LLM+integrations+that+ship+with+evals;WordPress%2C+Gatsby%2C+Astro%2C+Next.js+migrations" alt="Full-stack developer · TypeScript and Python · LLM integrations · Framework migrations">
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@ I'm a full-stack developer working across TypeScript and Python. On the front en
 
 I integrate LLMs into products, not just chat boxes. That includes retrieval-augmented generation over a recipe catalogue, structured buy, hold or sell decisions gated by hard risk filters, and evaluation suites that check model output before it ships.
 
-I also migrate sites between frameworks. I've moved several WordPress sites and an Astro site to Next.js on Vercel and Supabase, with page-by-page parity checks, managed redirects, a custom SEO layer and CMS tools so editors can manage content themselves.
+I also migrate sites between frameworks: WordPress to Next.js, WordPress to Astro, Gatsby to Astro and Astro to Next.js. The Next.js moves run on Vercel and Supabase, with page-by-page parity checks, managed redirects, a custom SEO layer and CMS tools so editors can manage content themselves.
 
 <details>
 <summary><b>More about me</b></summary>
