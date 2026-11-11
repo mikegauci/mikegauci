@@ -1,46 +1,72 @@
 # Michael Gauci
 
-I'm a full-stack developer. I build React and TypeScript interfaces, analytics dashboards, and the APIs and admin tools behind them. I've also migrated WordPress sites to Next.js and built custom CMS tools so editors can manage content themselves.
+I'm a full-stack developer working across TypeScript and Python. On the front end I build React and Next.js interfaces, analytics dashboards and admin tools. On the back end I write the APIs, Supabase data models and Python services behind them, such as a FastAPI meal-planning backend and a trading engine connected to Interactive Brokers.
 
-## Featured project · iGaming Canvas Lab
+I integrate LLMs into products, not just chat boxes. That includes retrieval-augmented generation over a recipe catalogue, structured buy, hold or sell decisions gated by hard risk filters, and evaluation suites that check model output before it ships.
+
+I also migrate sites between frameworks. I've moved several WordPress sites and an Astro site to Next.js on Vercel and Supabase, with page-by-page parity checks, managed redirects, a custom SEO layer and CMS tools so editors can manage content themselves.
+
+## Projects
+
+### 🎰 iGaming Canvas Lab
 
 Five playable browser games built with PixiJS and TypeScript. I separated game logic from rendering so outcomes can be tested independently. Mini Slot animates the reels toward a predetermined result, and Crash uses a mock server clock to determine whether a cash-out arrives in time.
 
-[Play Mini Slot](https://igaming-canvas-lab.vercel.app/slot/) · [Play Crash](https://igaming-canvas-lab.vercel.app/crash/) · [Browse the code and tests](https://github.com/mikegauci/igaming-canvas-lab/tree/main/apps)
+**[Casino Floor](https://igaming-canvas-lab.vercel.app/)** · **[Browse Codebase](https://github.com/mikegauci/igaming-canvas-lab)**
 
 <a href="https://igaming-canvas-lab.vercel.app/">
   <img src="assets/canvas-lab.jpg" width="640" alt="iGaming Canvas Lab cover art with a neon sunset and arcade lettering">
 </a>
 
-## Selected work
+### 🎯 MaltaGuns
 
-- **Market Pilot** · A Next.js trading analytics dashboard with Recharts for equity and daily profit and loss, candlestick charts, and a Python integration with Interactive Brokers. The strategy page walks through how a breakout moves from a signal to a trade or a skip. [Strategy page](https://market-pilot-dashboard.vercel.app/strategy) · [Dashboard code](https://github.com/mikegauci/market-pilot/blob/main/dashboard/components/analytics-dashboard.tsx)
+I built the platform end to end in Next.js and TypeScript, from the public marketplace to a custom CMS and admin CRM for managing listings, articles, events, and users.
 
-<a href="https://market-pilot-dashboard.vercel.app/strategy">
-  <img src="assets/market-pilot-strategy.gif" width="640" alt="Market Pilot strategy page stepping through a breakout example, with a card showing the AI's BUY decision passing the entry filters">
-</a>
-
-- **MaltaGuns** · I built the platform end to end in Next.js and TypeScript, from the public marketplace to a custom CMS and admin CRM for managing listings, articles, events, and users. [Public site](https://www.maltaguns.com/) · [Frontend code](https://github.com/mikegauci/maltaguns-app/blob/main/app/page.tsx) · [Admin dashboard code](https://github.com/mikegauci/maltaguns-app/blob/main/app/admin/page.tsx)
+**[Public Site](https://www.maltaguns.com/)** · **[Browse Codebase](https://github.com/mikegauci/maltaguns-app)**
 
 <a href="https://www.maltaguns.com/">
   <img src="assets/maltaguns-tour.gif" width="640" alt="MaltaGuns homepage, admin dashboard and listing moderation, with cards showing a listing going live, an identity review and approvals">
 </a>
 
-- **QTM Detailing** · A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings and leads, and a Google Drive integration for importing gallery photos. [Public site](https://www.qtmdetailing.mt/) · [Repository](https://github.com/mikegauci/qtm-detailing)
+### 🚗 QTM Detailing
 
-<a href="https://www.qtmdetailing.mt/">
+A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings and leads, and a Google Drive integration for importing gallery photos.
+
+**[Public Site](https://qtmdetailing.mt/)** · **[Browse Codebase](https://github.com/mikegauci/qtm-detailing)**
+
+<a href="https://qtmdetailing.mt/">
   <img src="assets/qtm-tour.gif" width="640" alt="QTM Detailing homepage, CRM dashboard and booking Kanban board, with cards showing a quote request becoming a lead and a booking moving to in progress">
 </a>
 
 <sub>Admin screens show sample data.</sub>
 
-- **Pantrila** · A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations. [Repository](https://github.com/mikegauci/pantrila) · [Try the guest demo](https://app.pantrila.com)
+### 🥗 Pantrila
 
-<a href="https://github.com/mikegauci/pantrila">
+A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations.
+
+**[Public Site](https://pantrila.com/)** · **[Public App (Try it as Guest)](https://app.pantrila.com/)**
+
+<a href="https://app.pantrila.com/">
   <img src="assets/pantrila-meal-plan.png" width="43%" alt="Pantrila mobile meal plan showing daily meals and nutrition targets">&nbsp;
   <img src="assets/pantrila-grocery-list.png" width="43%" alt="Pantrila mobile grocery list showing ingredients and quantities for planned meals">
 </a>
 
+### 📈 Market Pilot
+
+A Next.js trading analytics dashboard with Recharts for equity and daily profit and loss, candlestick charts, and a Python trading engine connected to Interactive Brokers. An LLM scores each watched stock as buy, hold or sell, and hard entry filters and risk caps decide whether a strong BUY becomes a trade. The strategy page walks through that path step by step.
+
+**[Browse Codebase](https://github.com/mikegauci/market-pilot)**
+
+<a href="https://market-pilot-dashboard.vercel.app/strategy">
+  <img src="assets/market-pilot-strategy.gif" width="640" alt="Market Pilot strategy page stepping through a breakout example, with a card showing the AI's BUY decision passing the entry filters">
+</a>
+
 ## How I use coding agents
 
-I write project-specific instructions and reusable skills for recurring work. In Market Pilot, a preflight skill specifies which tests, lint checks, and builds to run based on what changed. In Pantrila, the mobile agent guide calls for checking the installed Expo version against its documentation and running lint and type checks. [Preflight skill](https://github.com/mikegauci/market-pilot/blob/main/.agents/skills/preflight-checks/SKILL.md) · [Mobile agent guide](https://github.com/mikegauci/pantrila/blob/main/mobile/AGENTS.md)
+I work with **Claude Code**, **Codex** and **Cursor** every day, and I set each repository up so all three follow the same rules. `CLAUDE.md` and `AGENTS.md` hold the project instructions, and Cursor rules and skills cover the conventions that are easy to get wrong. In MaltaGuns, skills describe the design system and the firearms domain. In QTM Detailing, a rule keeps every quote button pointing at the same WhatsApp link.
+
+I turn recurring work into skills, so it runs the same way every time. Market Pilot has skills for preflight checks, adding a strategy filter, diagnosing the trader and reviewing a trading session. The preflight skill picks which tests, lint checks and builds to run based on what changed. In Pantrila, the mobile agent guide calls for checking the installed Expo version against its documentation before writing code. [Preflight skill](https://github.com/mikegauci/market-pilot/blob/main/.agents/skills/preflight-checks/SKILL.md) · [Mobile agent guide](https://github.com/mikegauci/pantrila/blob/main/mobile/AGENTS.md)
+
+I connect agents to the services the apps run on through MCP servers. In Market Pilot, schema changes go through the Supabase MCP server and are saved as migration files in the same step, so the database and the repository stay in sync.
+
+On the product side, I treat LLM features like any other code that has to be tested. Model calls return structured output against a JSON schema instead of free text, Pantrila's retrieval runs on OpenAI embeddings stored in pgvector, and its eval suites score retrieval, chat and meal-plan quality and save reports, so a prompt or model change that makes results worse shows up before it ships.
