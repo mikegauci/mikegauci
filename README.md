@@ -71,7 +71,7 @@ Five playable browser games built with PixiJS and TypeScript. I separated game l
 
 `Next.js` `Expo` `TypeScript` `Python` `FastAPI` `LangGraph` `OpenAI` `pgvector` `Supabase`
 
-A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations.
+An AI cooking companion, meal planner and recipe organiser with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations.
 
 **[Public Site](https://pantrila.com/)** · **[Public App (Try it as Guest)](https://app.pantrila.com/)**
 
