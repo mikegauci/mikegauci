@@ -56,6 +56,17 @@ Five playable browser games built with PixiJS and TypeScript. I separated game l
   <img src="assets/canvas-lab.jpg" width="640" alt="iGaming Canvas Lab cover art with a neon sunset and arcade lettering">
 </a>
 
+<details>
+<summary><b>More details</b></summary>
+<br>
+
+- **Five games behind one arcade landing page:** Mini Slot (masked reel strips, slam-stop, exact RTP enumeration), Lucky Wheel (weighted outcomes, velocity-matched easing), Scratch Card (RenderTexture brush with a coverage grid), Crash (real-time curve, server-timed cash-out race) and Bonus Round (rigged mascot, BIG/MEGA/EPIC win roll-ups).
+- **Server decides, client animates:** a mock outcome server settles every round before anything moves, so the client only plays towards a result it was handed, the way a real game server works.
+- **Shared engine:** `@lab/core` holds a seeded RNG, wallet, round state machine, scene manager and HUD components. Its Pixi-free logic layer is what the Vitest suite imports, so the game maths is tested without a renderer.
+- **Built like production:** strict TypeScript, one Vite app per game assembled into a single Vercel deploy, GitHub Actions CI, and every game works in portrait and landscape.
+
+</details>
+
 ### 🎯 MaltaGuns
 
 `Next.js` `React` `TypeScript` `Supabase` `Tailwind CSS` `Radix UI` `TanStack Table` `Tiptap` `Resend`
@@ -67,6 +78,18 @@ I built the platform end to end in Next.js and TypeScript, from the public marke
 <a href="https://www.maltaguns.com/">
   <img src="assets/maltaguns-tour.gif" width="640" alt="MaltaGuns homepage, admin dashboard and listing moderation, with cards showing a listing going live, an identity review and approvals">
 </a>
+
+<details>
+<summary><b>More details</b></summary>
+<br>
+
+- **Marketplace:** firearms and non-firearms listings with categories, wishlists, featured placements and expiry dates, plus a directory of local establishments and a community events calendar.
+- **Verified sellers:** identity checks run through Didit, with results arriving by webhook into an admin review queue. Uploaded firearm licences are checked with Tesseract OCR, which auto-rotates the image before reading it.
+- **Payments:** listing credits, event credits and featured placements are sold through a hosted checkout, confirmed by webhook and recorded in the admin's payments view.
+- **Admin CRM and CMS:** users, identity reviews, listing moderation, reported listings, establishments, events, a Tiptap blog editor, legal pages, per-page SEO and notifications, all built on TanStack Table and Radix UI.
+- **Housekeeping:** scheduled jobs send notifications, Resend handles transactional email, and the site generates its own sitemap and robots rules.
+
+</details>
 
 ### 🚗 QTM Detailing
 
@@ -82,9 +105,21 @@ A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings an
 
 <sub>Admin screens show sample data.</sub>
 
+<details>
+<summary><b>More details</b></summary>
+<br>
+
+- **Marketing site:** a dark, animated Next.js 16 site with services, pricing, a before-and-after gallery and an about page. Every quote button opens the same WhatsApp link.
+- **CRM:** leads, customers, bookings, a drag-and-drop Kanban board built with dnd kit, a FullCalendar view and inventory with low-stock tracking.
+- **Google integrations:** bookings sync to Google Calendar, and gallery photos are imported straight from a Google Drive folder.
+- **AI photo enhancement:** imported gallery photos can be cleaned up with OpenAI's image model before they're published.
+- **CMS:** site settings, services, pricing, FAQ, testimonials and page copy are all editable from the admin, backed by Supabase.
+
+</details>
+
 ### 🥗 Pantrila
 
-`Next.js` `Expo` `TypeScript` `Python` `FastAPI` `OpenAI` `pgvector` `Supabase`
+`Next.js` `Expo` `TypeScript` `Python` `FastAPI` `LangGraph` `OpenAI` `pgvector` `Supabase`
 
 A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations.
 
@@ -93,6 +128,19 @@ A meal planner with Next.js and Expo clients, a shared TypeScript API client, an
 <a href="https://app.pantrila.com/">
   <img src="assets/pantrila-tour.gif" width="640" alt="Pantrila homepage, weekly meal plan and grocery list, with cards showing an allergen-checked recipe answer, a day landing on its energy target and a list of only what is missing">
 </a>
+
+<details>
+<summary><b>More details</b></summary>
+<br>
+
+- **Ask, save, cook, plan:** ask what to cook and get answers from a 300-recipe corpus and your pantry, save recipes from TikTok, Instagram, Facebook, links, photos or text, cook step by step hands-free, then plan the week.
+- **The model proposes, code decides:** a LangGraph agent plans the week around your diet, allergies and nutrition targets, but every recipe and plan is re-checked by deterministic code before you see it. A plan that still breaks a hard rule after two repairs gets the meal swapped by code, or the planner refuses.
+- **Hybrid search:** vector and full-text retrieval combined reach recall@10 of 0.843 and MRR of 0.922 on 65 labelled queries, beating either retriever alone.
+- **Evals with committed reports:** recipe search, the meal planner, the cooking assistant and recipe import each have an eval set. For example, the planner has zero hard violations across 16 diet and allergy profiles, and the eval gate fails on any violation.
+- **Nutrition from real data:** values are calculated from ingredient weights using USDA FoodData Central and the French Ciqual table.
+- **Everywhere:** a Next.js web app and an Expo app for iPhone and Android share one TypeScript API client. Guests can try it without an account and add Google sign-in later without losing anything.
+
+</details>
 
 ### 📈 Market Pilot
 
@@ -105,6 +153,18 @@ A Next.js trading analytics dashboard with Recharts for equity and daily profit 
 <a href="https://market-pilot-dashboard.vercel.app/strategy">
   <img src="assets/market-pilot-strategy.gif" width="640" alt="Market Pilot strategy page stepping through a breakout example, with a card showing the AI's BUY decision passing the entry filters">
 </a>
+
+<details>
+<summary><b>More details</b></summary>
+<br>
+
+- **Decision path:** market data (RSI, EMA, volume, news) goes to Jev, the LLM, which returns buy, hold or sell with a confidence score. Entry filters and risk caps then decide whether to trade, and every skip is logged with its reason.
+- **Hard rules around the model:** a BUY needs at least 74% confidence and a clear margin over HOLD. Cooldowns and daily entry limits cap exposure, and the RSI ceiling only loosens inside a 10-minute breakout window.
+- **Watchlist rotation:** the active list holds 12 names. A stock that breaks out of its 10-minute high on rising volume is promoted onto the list and protected for the length of its breakout window.
+- **Architecture:** only the Python engine talks to Interactive Brokers. It writes to Supabase, and the Next.js dashboard on Vercel reads from it, with pause and stop controls and a read-only role for viewers.
+- **Dashboard:** equity and daily profit-and-loss charts with Recharts, candlestick charts, a predictions feed and a settings page for the strategy thresholds. It runs against an IBKR paper account.
+
+</details>
 
 ## How I use coding agents
 
