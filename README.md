@@ -9,16 +9,35 @@
   <a href="mailto:mikegauci@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/michael-gauci-422180104">LinkedIn</a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/currently-online-44cc11" alt="Currently online">
+  <a href="https://github.com/mikegauci/onyx"><img src="https://img.shields.io/badge/coding-Onyx-0a84ff?logo=claude&logoColor=white" alt="Coding Onyx"></a>
+  <img src="https://img.shields.io/badge/listening%20to-Daft%20Punk-1db954?logo=spotify&logoColor=white" alt="Listening to Daft Punk">
+  <img src="https://img.shields.io/badge/watching-Formula%201-e10600?logo=f1&logoColor=white" alt="Watching Formula 1">
+</p>
+
 I'm a full-stack developer working across TypeScript and Python. On the front end I build React and Next.js interfaces, analytics dashboards and admin tools. On the back end I write the APIs, Supabase data models and Python services behind them, such as a FastAPI meal-planning backend and a trading engine connected to Interactive Brokers.
 
 I integrate LLMs into products, not just chat boxes. That includes retrieval-augmented generation over a recipe catalogue, structured buy, hold or sell decisions gated by hard risk filters, and evaluation suites that check model output before it ships.
 
 I also migrate sites between frameworks. I've moved several WordPress sites and an Astro site to Next.js on Vercel and Supabase, with page-by-page parity checks, managed redirects, a custom SEO layer and CMS tools so editors can manage content themselves.
 
+<details>
+<summary><b>More about me</b></summary>
+<br>
+
+- **What I'm building now:** Onyx, which is two products in one monorepo. Onyx Studio is a public website, and Onyx Platform is a multi-tenant SaaS for business operations and AI automation. Both have Next.js front ends sharing shadcn/ui components, on top of a FastAPI backend and Postgres.
+- **Client work:** mostly for businesses in Malta. I move e-commerce and content sites off WordPress onto Next.js and Supabase, with Stripe payments, transactional email and admin panels the owners run themselves. One was a bilingual English and Arabic site with full right-to-left layouts.
+- **Design as well as code:** I go from Figma layouts and Photoshop and Illustrator assets to the design systems the components are built on, so a project doesn't need a separate hand-off.
+- **What I care about:** the unglamorous parts that keep a product healthy, such as typed APIs, migrations committed to the repo, error tracking with Sentry and agents that follow the same rules as the rest of the team.
+- **Away from the keyboard:** I follow Formula 1, and Daft Punk is usually playing while I code.
+
+</details>
+
 ## Tech stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,nodejs,python,fastapi,supabase,postgres,vercel,wordpress,astro,git&perline=13" alt="TypeScript, React, Next.js, Tailwind CSS, Node.js, Python, FastAPI, Supabase, PostgreSQL, Vercel, WordPress, Astro and Git">
+  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,gatsby,astro,wordpress,php,tailwind,threejs,nodejs,python,fastapi,supabase,postgres,mysql,docker,cloudflare,vercel,git,figma,ps,ai&perline=11" alt="TypeScript, React, Next.js, Gatsby, Astro, WordPress, PHP, Tailwind CSS, Three.js, Node.js, Python, FastAPI, Supabase, PostgreSQL, MySQL, Docker, Cloudflare, Vercel, Git, Figma, Photoshop and Illustrator">
 </p>
 
 <p align="center"><sub>Also: OpenAI API · pgvector · Expo · PixiJS · Recharts · shadcn/ui · Interactive Brokers API</sub></p>
