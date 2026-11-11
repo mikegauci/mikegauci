@@ -14,9 +14,26 @@ Five playable browser games built with PixiJS and TypeScript. I separated game l
 
 ## Selected work
 
-- **Market Pilot** · A Next.js trading analytics dashboard with Recharts for equity and daily profit and loss, candlestick charts, and a Python integration with Interactive Brokers. [Dashboard code](https://github.com/mikegauci/market-pilot/blob/main/dashboard/components/analytics-dashboard.tsx)
+- **Market Pilot** · A Next.js trading analytics dashboard with Recharts for equity and daily profit and loss, candlestick charts, and a Python integration with Interactive Brokers. The strategy page walks through how a breakout moves from a signal to a trade or a skip. [Strategy page](https://market-pilot-dashboard.vercel.app/strategy) · [Dashboard code](https://github.com/mikegauci/market-pilot/blob/main/dashboard/components/analytics-dashboard.tsx)
+
+<a href="https://market-pilot-dashboard.vercel.app/strategy">
+  <img src="assets/market-pilot-strategy.gif" width="640" alt="Market Pilot strategy page stepping through a breakout example, with a card showing the AI's BUY decision passing the entry filters">
+</a>
+
 - **MaltaGuns** · I built the platform end to end in Next.js and TypeScript, from the public marketplace to a custom CMS and admin CRM for managing listings, articles, events, and users. [Public site](https://www.maltaguns.com/) · [Frontend code](https://github.com/mikegauci/maltaguns-app/blob/main/app/page.tsx) · [Admin dashboard code](https://github.com/mikegauci/maltaguns-app/blob/main/app/admin/page.tsx)
-- **QTM Detailing** · A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings and leads, and a Google Drive integration for importing gallery photos. [Repository](https://github.com/mikegauci/qtm-detailing)
+
+<a href="https://www.maltaguns.com/">
+  <img src="assets/maltaguns-tour.gif" width="640" alt="MaltaGuns homepage, admin dashboard and listing moderation, with cards showing a listing going live, an identity review and approvals">
+</a>
+
+- **QTM Detailing** · A Next.js site with Tailwind and shadcn/ui, a custom CMS and CRM for bookings and leads, and a Google Drive integration for importing gallery photos. [Public site](https://www.qtmdetailing.mt/) · [Repository](https://github.com/mikegauci/qtm-detailing)
+
+<a href="https://www.qtmdetailing.mt/">
+  <img src="assets/qtm-tour.gif" width="640" alt="QTM Detailing homepage, CRM dashboard and booking Kanban board, with cards showing a quote request becoming a lead and a booking moving to in progress">
+</a>
+
+<sub>Admin screens show sample data.</sub>
+
 - **Pantrila** · A meal planner with Next.js and Expo clients, a shared TypeScript API client, and a Python backend with retrieval-augmented generation and LLM evaluations. [Repository](https://github.com/mikegauci/pantrila) · [Try the guest demo](https://app.pantrila.com)
 
 <a href="https://github.com/mikegauci/pantrila">
